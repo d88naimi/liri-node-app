@@ -10,7 +10,7 @@
  var request = require("request");
  // twitter library
  // might have to go in a folder ./keys
- var LiriTwitterBOT = require("./key.js");
+ var keys = require("./key.js");
  var twitter = require("twitter"); 
 
  var task = process.argv[2]; 
@@ -18,7 +18,7 @@
 
  // twitter call
 
- var tweets = new twitter(LiriTwitterBOT.LiriTwitterBOT);
+// var tweets = new twitter(LiriTwitterBOT.LiriTwitterBOT);
  var tSearch = { 
  	screen_name: "DaveNaimi",
  	count: 20,
@@ -56,7 +56,15 @@
  };
 
  // twitter function begin
+
 function fetchTweets() { 
+var tweets = new twitter ({ 
+  consumer_key: keys.twitterKeys.consumer_key,
+  consumer_secret: keys.twitterKeys.consumer_sercret,
+  access_token_key: keys.twitterKeys.access_token_key,
+  access_token_secret: keys.twitterKeys.access_token_secret
+}); 
+
 tweets.get('statuses/user_timeline', tSearch, function(err, response) {
     if (err) {
       console.log(err);
@@ -67,7 +75,7 @@ tweets.get('statuses/user_timeline', tSearch, function(err, response) {
    	console.log("Published:" + response[i].created_at) // print publish date
    	logObject += ', ' + '#' + (i + 1) + " = " + response[i].text + response[i].created_at; //concatenation to log.txt
     };
-   	logObject = task + "" + logObject + "\n"; // task to beginning
+   //	logObject = task + "" + logObject + "\n"; // task to beginning
    	writeLog(logObject); // write to log.txt
    }); 
 }; // end of fetch tweet

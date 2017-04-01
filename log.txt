@@ -1,1 +1,4 @@
 spotify-this-song, black+mambo, Glass Animals, Black Mambo, https://p.scdn.co/mp3-preview/d7eeb996b4c16d1ae77a0e7df96f4bc586fba5c7?cid=null, Black Mambo / Exxus
+spotify-this-song, black+mambo, Glass Animals, Black Mambo, https://p.scdn.co/mp3-preview/d7eeb996b4c16d1ae77a0e7df96f4bc586fba5c7?cid=null, Black Mambo / Exxus
+movie-this, jumanji, Jumanji, 1995, Robin Williams, Jonathan Hyde, Kirsten Dunst, Bradley Pierce, When two kids find and play a magical board game, they release a man trapped for decades in it and a host of dangers that can only be stopped by finishing the game., USA, English, French, 6.9, N/A, http://www.rottentomatoes.com/m/1068044-jumanji/
+spotify-this-song, black+mambo, Glass Animals, Black Mambo, https://p.scdn.co/mp3-preview/d7eeb996b4c16d1ae77a0e7df96f4bc586fba5c7?cid=null, Black Mambo / Exxus
